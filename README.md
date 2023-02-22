@@ -92,5 +92,5 @@ python3 test_app.py
 Heroku Deployment and Base URL
 The backend application has been deployed on Heroku and can be accessed live at
 
-https://jobportal-backend.herokuapp.com/
+https://capstone-deployment-cv3o.onrender.com
 
