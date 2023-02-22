@@ -67,7 +67,7 @@ def create_app(test_config=None):
   
 # POST ACTORS
 
-  @app.route('/actors', methods=['POST'])
+  @app.route('/actor', methods=['POST'])
   @requires_auth('post:actors')
   def new_actor(payload):
     try:
@@ -113,7 +113,7 @@ def create_app(test_config=None):
 
 # PATCH ACTORS
 
-  @app.route('/actors/<int:actors_id>', methods=['PATCH'])
+  @app.route('/actor/<int:actors_id>', methods=['PATCH'])
   @requires_auth('patch:actors')
   def edit_actors(payload, actors_id):
     actors = Actors.query.filter_by(id=actors_id).first()
